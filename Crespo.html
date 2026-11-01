@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Santino S. Crespo</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-blue: #38bdf8;
+            --accent-gold: #f59e0b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .profile-card {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            border: 1px solid #334155;
+        }
+
+        /* Centralized Header Area */
+        .header-section {
+            text-align: center;
+            padding: 40px 20px 30px;
+            background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+            border-bottom: 2px solid #334155;
+        }
+
+        .profile-img-container {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 4px solid var(--accent-blue);
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 150%;
+            object-fit: cover;
+        }
+
+        .header-section h1 {
+            font-size: 2.2rem;
+            letter-spacing: 1.5px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .info-badges {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .badge {
+            background-color: #334155;
+            color: var(--accent-blue);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* Layout Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--accent-blue);
+            border-bottom: 2px solid var(--accent-blue);
+            padding-bottom: 6px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .custom-list {
+            list-style: none;
+        }
+
+        .custom-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 12px;
+            color: var(--text-secondary);
+        }
+
+        .custom-list li::before {
+            content: "•";
+            color: var(--accent-gold);
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        .skill-group-title {
+            font-weight: bold;
+            color: var(--text-primary);
+            margin: 10px 0 6px;
+            font-size: 0.95rem;
+        }
+
+        .hobby-card {
+            background: #0f172a;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border-left: 3px solid var(--accent-blue);
+        }
+
+        .hobby-card h4 {
+            color: var(--text-primary);
+            font-size: 0.95rem;
+        }
+
+        .hobby-card p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+
+<div class="profile-card">
+    <!-- Centralized Header -->
+    <header class="header-section">
+        <div class="profile-img-container">
+            <img src="SAN.png" alt="Santino S. Crespo">
+        </div>
+        <h1>SANTINO S. CRESPO</h1>
+        <div class="info-badges">
+            <span class="badge">Age: 17 Years Old</span>
+            <span class="badge">Status: Student</span>
+            <span class="badge">Role: Junior High Graduate</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="content-grid">
+        <!-- Left Column -->
+        <div class="column">
+            <section class="section">
+                <h2 class="section-title">About Me</h2>
+                <p>Hello! I am Santino S. Crespo, a dedicated 17-year-old student passionate about personal growth, technology, and learning. Driven by curiosity and commitment, I aim to approach every task with a problem-solving mindset and adaptability to new environments.</p>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Life Motivation</h2>
+                <p>My core motivation stems from the desire to continuously improve myself and build skills that prepare me for future career success. I am driven by the belief that consistency, integrity, and learning from challenges create long-term achievement and meaningful growth.</p>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Academic Background</h2>
+                <ul class="custom-list">
+                    <li>
+                        <strong>Elementary Education:</strong> Completed primary education with Academic Honors at Emma Learning Center.
+                    </li>
+                    <li>
+                        <strong>Junior High School:</strong> Completed Junior High and graduated with Academic Honors at Libertad National High School, maintaining strong academic performance throughout.
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Right Column -->
+        <div class="column">
+            <section class="section">
+                <h2 class="section-title">Skills & Capabilities</h2>
+                
+                <div class="skill-group-title">Hard / Technical Skills</div>
+                <ul class="custom-list">
+                    <li><strong>Digital Literacy:</strong> Proficient in standard document formatting and slide presentations using Microsoft Word and PowerPoint.</li>
+                    <li><strong>Task Organization:</strong> Skilled in digital file management, schedule planning, and structured note-taking.</li>
+                </ul>
+
+                <div class="skill-group-title">Soft / Interpersonal Skills</div>
+                <ul class="custom-list">
+                    <li><strong>Problem-Solving & Adaptability:</strong> Quick to adjust to new tools, routines, and collaborative settings.</li>
+                    <li><strong>Work Ethic & Time Management:</strong> Reliable under pressure, punctual with deadlines, and open to continuous constructive feedback.</li>
